@@ -305,12 +305,16 @@ def render_live_URL(tA, tB, mn, dt):
     URL = "https://cmc2.sportskeeda.com/live-cricket-score/pakistan-vs-sri-lanka-super-four-match-3-(a2-v-b1)-23-september-2025/ajax"
     if mn.lower() not in ['final', 'f']:
         if int(mn) == 1:
-            URL = "https://cmc2.sportskeeda.com/live-cricket-score/pakistan-vs-sri-lanka-super-four-match-3-(a2-v-b1)-23-september-2025/ajax"
+            URL = "https://cmc2.sportskeeda.com/live-cricket-score/sri-lanka-vs-bangladesh-super-four-match-1-(b1-v-b2)-20-september-2025/ajax"
         elif int(mn) == 2:
-            URL = "https://cmc2.sportskeeda.com/live-cricket-score/india-vs-bangladesh-super-four-match-4-(a1-v-b2)-24-september-2025/ajax"
+            URL = "https://cmc2.sportskeeda.com/live-cricket-score/india-vs-pakistan-super-four-match-2-(a1-v-a2)-21-september-2025/ajax"
         elif int(mn) == 3:
-            URL = "https://cmc2.sportskeeda.com/live-cricket-score/pakistan-vs-bangladesh-super-four-match-5-(a2-v-b2)-25-september-2025/ajax"
+            URL = "https://cmc2.sportskeeda.com/live-cricket-score/pakistan-vs-sri-lanka-super-four-match-3-(a2-v-b1)-23-september-2025/ajax"
         elif int(mn) == 4:
+            URL = "https://cmc2.sportskeeda.com/live-cricket-score/india-vs-bangladesh-super-four-match-4-(a1-v-b2)-24-september-2025/ajax"
+        elif int(mn) == 5:
+            URL = "https://cmc2.sportskeeda.com/live-cricket-score/pakistan-vs-bangladesh-super-four-match-5-(a2-v-b2)-25-september-2025/ajax"
+        elif int(mn) == 6:
             URL = "https://cmc2.sportskeeda.com/live-cricket-score/india-vs-sri-lanka-super-four-match-6-(a1-v-b1)-26-september-2025/ajax"
     else:
         URL = "https://cmc2.sportskeeda.com/live-cricket-score/india-vs-pakistan-final-28-september-2025/ajax"

@@ -241,14 +241,14 @@ window.addEventListener('statsReady', () => {
             let i = tid[dt3.score_strip[1].team_id][0];
             inn2.inning.overs.slice(0, -1).forEach(function(over) {
                 let style = '';
-                if (i === 'RCB') {
-                    style = `--c1: ${clr[i].c3}; --c2: ${clr[i].c1}; --fc: white;`;
+                if (i === 'SL') {
+                    style = `--c1: ${clr[i].c3}; --c2: ${clr[i].c1}; --fc: black;`;
                 } else if (i === 'GT') {
                     style = `--c1: ${clr[i].c3}; --c2: ${clr[i].c2}; --fc: white;`;
                 } else if (i === 'MI') {
                     style = `--c1: ${clr[i].c3}; --c2: ${clr[i].c2}; --fc: white;`;
-                } else if (i === 'PBKS') {
-                    style = `--c1: ${clr[i].c1}; --c2: ${clr[i].c2}; --fc: white;`;
+                } else if (i === 'PAK') {
+                    style = `--c1: ${clr[i].c1}; --c2: ${clr[i].c2}; --fc: black;`;
                 } else if (i === 'KKR') {
                     style = `--c1: ${clr[i].c2}; --c2: ${clr[i].c3}; --fc: white;`;
                 } else if (i === 'CSK') {
@@ -293,14 +293,14 @@ window.addEventListener('statsReady', () => {
             let i = tid[dt3.score_strip[0].team_id][0];
             inn1.inning.overs.slice(0, -1).forEach(function(over) {
                 let style = '';
-                if (i === 'RCB') {
-                    style = `--c1: ${clr[i].c3}; --c2: ${clr[i].c1}; --fc: white;`;
+                if (i === 'SL') {
+                    style = `--c1: ${clr[i].c1}; --c2: ${clr[i].c2}; --fc: black;`;
                 } else if (i === 'GT') {
                     style = `--c1: ${clr[i].c3}; --c2: ${clr[i].c2}; --fc: white;`;
                 } else if (i === 'MI') {
                     style = `--c1: ${clr[i].c3}; --c2: ${clr[i].c2}; --fc: white;`;
-                } else if (i === 'PBKS') {
-                    style = `--c1: ${clr[i].c1}; --c2: ${clr[i].c2}; --fc: white;`;
+                } else if (i === 'PAK') {
+                    style = `--c1: ${clr[i].c1}; --c2: ${clr[i].c2}; --fc: black;`;
                 } else if (i === 'KKR') {
                     style = `--c1: ${clr[i].c2}; --c2: ${clr[i].c3}; --fc: white;`;
                 } else if (i === 'CSK') {

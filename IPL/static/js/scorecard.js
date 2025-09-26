@@ -178,12 +178,12 @@ window.addEventListener('statsReady', () => {
             <b class="bg-blue-grad font_18 d-block px-3 text-white text-center pt-2 pb-2 rounded_top">Player of the Match</b>
             <div class="potm-content">
                 <div class="potm-image" style="--c1: ${c1}; --c2: ${c2};">
-                    <img src="/static/images/squads/${team}/${name.replace(/ /g, '-')}.png" alt="${name}">
+                    <img src="/static/images/squad_logos/${team}.png" alt="${name}">
                 </div>
                 <div class="potm-details">
                     <div class="potm-name">${name}</div>
                     <div class="potm-team fw-bold">
-                        <img src="/static/images/squad_logos/${team}${team === 'RR' ? '1' : ''}.png" alt="Team Logo" class="team-logo">
+                        <img src="/static/images/squad_logos/${team}.png" alt="Team Logo" class="team-logo">
                         ${fn[team]}
                     </div>
                     <div class="potm-stats">

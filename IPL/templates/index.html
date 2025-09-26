@@ -210,20 +210,19 @@ h3.section-title {
   <div style="padding: 30px 10px;">
     <div class="marquee-container">
       <marquee style="font-weight: bold; font-family: 'Exo 2', sans-serif; transform: skew(-5deg)" width="60%" direction="left" scrollamount="8">
-          <h1><b>Welcome to TATA IPL 2025 Info Tab</b></h1>
+          <h1><b>Welcome to Asia Cup 2025 Info Tab</b></h1>
       </marquee>
     </div>
 
     <div>
-      <img src="{{ url_for('static', filename= 'images/IPL logo 2.png') }}" class="logo" alt="TATA IPL Logo">
+      <img src="{{ url_for('static', filename= 'images/Asia Cup.png') }}" class="logo" alt="Asia Cup Logo">
     </div>
 
     <div class="team-container">
-      <h3 class="section-title"><span class="section-title-highlight"><span style="color: #d5edff;">🔥TATA IPL 2025🔥<br>Teams</span></span></h3>
+      <h3 class="section-title"><span class="section-title-highlight"><span style="color: #d5edff;">🔥Asia Cup 2025🔥<br>Teams</span></span></h3>
       <div class="flex-container">
-        {% for i in teams[:-1] %}
+        {% for i in teams[-5:-1] %}
         <div class="card-wrapper">
-			<a href="{{ url_for('main.squad', team=i) }}">
 			<div class="card-inner">
 				<div class="card-front" style="{% if i == 'RCB' %} --c1: {{ clr[i]['c3'] }}; --c2: {{ clr[i]['c1'] }} {% elif i == 'GT' %} --c1: {{ clr[i]['c3'] }}; --c2: {{ clr[i]['c2'] }} {% elif i == 'MI' %} --c1: {{ clr[i]['c3'] }}; --c2: {{ clr[i]['c2'] }}  {% elif i == 'PBKS' %} --c1: {{ clr[i]['c2'] }}; --c2: {{ clr[i]['c1'] }} {% elif i == 'KKR' %} --c1: {{ clr[i]['c2'] }}; --c2: {{ clr[i]['c3'] }} {% else %} --c1: {{ clr[i]['c1'] }}; --c2: {{ clr[i]['c2'] }} {% endif %};">
 					<img class="card-image" src="/static/images/squad_logos/{{ i }}.png" alt="{{ i }}">
@@ -232,7 +231,6 @@ h3.section-title {
 				{{ i | upper }}
 				</div>
 			</div>
-			</a>
 		</div>
         {% endfor %}
       </div>
