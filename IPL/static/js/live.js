@@ -355,7 +355,7 @@ window.addEventListener('statsReady', () => {
         <div class="score_2_inner border rounded_10 bg-white mt-3 mb-3">
             <b class="bg-blue-grad font_18 d-block px-3 text-white text-center pt-2 pb-2 rounded_top">Player of the Series</b>
             <div class="potm-content">
-                <div class="potm-image" style="--c1: ${c1}; --c2: ${c2};">
+                <div class="potm-image text-blue" style="--c1: ${c1}; --c2: ${c2};">
                     <img src="${dt3.player_images[dt3.player_of_series.player_slug]}" alt="${name}">
                 </div>
                 <div class="potm-details">
