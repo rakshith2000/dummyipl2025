@@ -301,7 +301,7 @@ window.addEventListener('statsReady', () => {
             <b class="bg-blue-grad font_18 d-block px-3 text-white text-center pt-2 pb-2 rounded_top">Player of the Match</b>
             <div class="potm-content">
                 <div class="potm-image" style="--c1: ${c1}; --c2: ${c2};">
-                    <img src="/static/images/squad_logos/${team}.png" alt="${name}">
+                    <img src="${dt3.player_images[dt3.player_of_match.player_slug]}" alt="${name}">
                 </div>
                 <div class="potm-details">
                     <div class="potm-name">${name}</div>
@@ -356,7 +356,7 @@ window.addEventListener('statsReady', () => {
             <b class="bg-blue-grad font_18 d-block px-3 text-white text-center pt-2 pb-2 rounded_top">Player of the Series</b>
             <div class="potm-content">
                 <div class="potm-image" style="--c1: ${c1}; --c2: ${c2};">
-                    <img src="/static/images/squad_logos/${team}.png" alt="${name}">
+                    <img src="${dt3.player_images[dt3.player_of_series.player_slug]}" alt="${name}">
                 </div>
                 <div class="potm-details">
                     <div class="potm-name">${name}</div>
