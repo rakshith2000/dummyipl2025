@@ -96,10 +96,10 @@ clr = {'CSK':{'c1':'#ffff3c', 'c2':'#fdcd05', 'c3':'#00adef'},  #fdcd05 f15c19,
         'RR':{'c1':'#ff69b4', 'c2':'#074ea2', 'c3':'#cba92b'},
         'RCB':{'c1':'#2b2a29', 'c2':'#444444', 'c3':'#ec1c24'},
         'SRH':{'c1':'#f26522', 'c2':'#ed1a37', 'c3':'#221f21'},
-        'IND':{'c1':'#2b2a29', 'c2':'#444444', 'c3':'#ec1c24'},
-        'BAN':{'c1':'#f26522', 'c2':'#ed1a37', 'c3':'#221f21'},
-        'PAK':{'c1':'#2b2a29', 'c2':'#444444', 'c3':'#ec1c24'},
-        'SL':{'c1':'#f26522', 'c2':'#ed1a37', 'c3':'#221f21'},
+        'IND':{'c1':"#0998cd", 'c2':"#137CBE", 'c3':"#ec930d"},
+        'BAN':{'c1':"#128b28", 'c2':'#137932', 'c3':'#ec1c24'},
+        'PAK':{'c1':"#fcfcfc", 'c2':'#0bc941', 'c3':'#137932'},
+        'SL':{'c1':"#f0ec18", 'c2':"#eaa40d", 'c3':"#9f2523"},
         'TBA':{'c1':'#ffffff', 'c2':'#ffffff', 'c3':'#ffffff'}}
 
 ptclr = {'CSK':'#f9cd05',
@@ -313,7 +313,7 @@ def render_live_URL(tA, tB, mn, dt):
         elif int(mn) == 4:
             URL = "https://cmc2.sportskeeda.com/live-cricket-score/india-vs-sri-lanka-super-four-match-6-(a1-v-b1)-26-september-2025/ajax"
     else:
-        URL = "https://cmc2.sportskeeda.com/live-cricket-score/india-vs-tba-final-asia-cup-28-september-2025/ajax"
+        URL = "https://cmc2.sportskeeda.com/live-cricket-score/india-vs-pakistan-final-28-september-2025/ajax"
     return URL
 
 @main.route('/')

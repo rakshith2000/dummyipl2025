@@ -82,7 +82,7 @@ def setup_scheduler(app):
     @scheduler.task('interval', id='ping', minutes=10,  misfire_grace_time=120)
     def ping():
         try:
-            requests.get("https://tataipl2025.onrender.com/login", timeout=5)
+            requests.get("https://asiacup2025.onrender.com/login", timeout=5)
         except Exception as e:
             app.logger.error(f"Ping failed: {e}")
 
