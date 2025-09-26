@@ -331,6 +331,11 @@ window.addEventListener('statsReady', () => {
     if (dt3.player_of_series.player_name !== '') {
         let name = dt3.player_of_series.player_name;
         let team = 'RCB';
+        dt3.squad.forEach(squad => {
+            if (squad && squad.squad.includes(name)) {
+                team = squad.team_shortname;
+            }
+        });
         let c1, c2;
         if (team === 'RCB') {
             c1 = clr2[team].c3; c2 = clr2[team].c1;
