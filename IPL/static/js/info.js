@@ -190,7 +190,7 @@ window.addEventListener('statsReady', () => {
                     <tr class="border border-end">
                         <td class="bg-light fw-bold">3rd Umpire</td>
                         <td class="border-start">${
-                        dt3.umpires ? (dt3.umpires.split(',')[2] ? dt3.umpires.split(',')[2] : 'TBA') : 'TBA'
+                        dt3.umpires ? (dt3.umpires.split(',')[2] ? dt3.umpires.split(',')[2] + ")" : 'TBA') : 'TBA'
                         }</td>
                     </tr>
                     <tr class="border border-end">
