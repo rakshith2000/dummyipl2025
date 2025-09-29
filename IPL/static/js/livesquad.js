@@ -177,6 +177,11 @@ window.addEventListener('statsReady', () => {
                             <div class="d-flex w-50 border-right border-1 ms-2 flex-column">`;
             dt3.squad[0].bench_players.forEach(player => {
                 liveHTML += `<div class="d-flex border-bottom border-1">
+                                        <div class="d-flex align-items-center ms-1">
+                                            <div class="squad-image">
+                                                <img src="${dt3.player_images[player.sk_slug]}" alt="${player.name}" onerror="this.onerror=null;this.src='/static/images/Default.png';">
+                                            </div>
+                                        </div>
                                         <div class="d-block w-100 p-1">
                                             <div class="font_12 text-blue fw-bold p-0 m-0">${player.name}</div>
 					                        <div class="font_11 m-0 p-0">${Capitalize(player.role.replace('-', ' '))}</div>
@@ -191,6 +196,11 @@ window.addEventListener('statsReady', () => {
                                             <div class="font_12 text-blue fw-bold p-0 m-0">${player.name}</div>
                                             <div class="font_11 m-0 p-0">${Capitalize(player.role.replace('-', ' '))}</div>
                                         </div>
+                                        <div class="d-flex align-items-center me-1">
+                                            <div class="squad-image">
+                                                <img src="${dt3.player_images[player.sk_slug]}" alt="${player.name}" onerror="this.onerror=null;this.src='/static/images/Default.png';">
+                                            </div>
+                                        </div>
                                     </div>`;
             });
             liveHTML += `</div></div>`;
@@ -203,6 +213,11 @@ window.addEventListener('statsReady', () => {
                             <div class="d-flex w-50 border-right border-1 ms-2 flex-column">`;
             dt3.squad[0].players.forEach(player => {
                 liveHTML += `<div class="d-flex border-bottom border-1" style="background-color: ${('delta' in player) ? (player.delta === 1 ? '#abf7b1' : '#fcc7c3') : '#ffffff'}">
+                                        <div class="d-flex align-items-center ms-1">
+                                            <div class="squad-image">
+                                                <img src="${dt3.player_images[player.sk_slug]}" alt="${player.name}" onerror="this.onerror=null;this.src='/static/images/Default.png';">
+                                            </div>
+                                        </div>
                                         <div class="d-block w-100 p-1">
                                             <div class="font_12 text-blue fw-bold p-0 m-0">${player.name}</div>
                                             <div class="font_11 m-0 p-0">${Capitalize(player.role.replace('-', ' '))}</div>
@@ -217,6 +232,11 @@ window.addEventListener('statsReady', () => {
                                             <div class="font_12 text-blue fw-bold p-0 m-0">${player.name}</div>
                                             <div class="font_11 m-0 p-0">${Capitalize(player.role.replace('-', ' '))}</div>
                                         </div>
+                                        <div class="d-flex align-items-center me-1">
+                                            <div class="squad-image">
+                                                <img src="${dt3.player_images[player.sk_slug]}" alt="${player.name}" onerror="this.onerror=null;this.src='/static/images/Default.png';">
+                                            </div>
+                                        </div>
                                     </div>`;
             });
             liveHTML += `</div></div>`;
@@ -228,6 +248,11 @@ window.addEventListener('statsReady', () => {
                             <div class="d-flex w-50 border-right border-1 ms-2 flex-column">`;
             dt3.squad[0].bench_players.forEach(player => {
                 liveHTML += `<div class="d-flex border-bottom border-1" style="background-color: ${('delta' in player) ? (player.delta === 1 ? '#abf7b1' : '#fcc7c3') : '#ffffff'}">
+                                        <div class="d-flex align-items-center ms-1">
+                                            <div class="squad-image">
+                                                <img src="${dt3.player_images[player.sk_slug]}" alt="${player.name}" onerror="this.onerror=null;this.src='/static/images/Default.png';">
+                                            </div>
+                                        </div>
                                         <div class="d-block w-100 p-1">
                                             <div class="font_12 text-blue fw-bold p-0 m-0">${player.name}&nbsp;</div>
                                             <div class="font_11 m-0 p-0">${Capitalize(player.role.replace('-', ' '))}</div>
@@ -241,6 +266,11 @@ window.addEventListener('statsReady', () => {
                                         <div class="d-block w-100 p-1">
                                             <div class="font_12 text-blue fw-bold p-0 m-0">&nbsp;${player.name}</div>
                                             <div class="font_11 m-0 p-0">${Capitalize(player.role.replace('-', ' '))}</div>
+                                        </div>
+                                        <div class="d-flex align-items-center me-1">
+                                            <div class="squad-image">
+                                                <img src="${dt3.player_images[player.sk_slug]}" alt="${player.name}" onerror="this.onerror=null;this.src='/static/images/Default.png';">
+                                            </div>
                                         </div>
                                     </div>`;
             });

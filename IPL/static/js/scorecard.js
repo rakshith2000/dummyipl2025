@@ -249,6 +249,7 @@ window.addEventListener('statsReady', () => {
             const bgcolor = batsmen.out_str === "Not out" ? '#2E7D32db' : '#666666b0';
             const team = batsmen.team;
             const name = batsmen.name;
+            let imagePath = dt3.player_images[batsmen.slug];
             liveHTML += `<tr class="border-0">
                 <td class="pb-0 text-blue" style="text-wrap: nowrap;">
                     <b>${name}${batsmen.is_captain ? '&nbsp;<span class="text-muted">(C)</span>' : ''}</b>
