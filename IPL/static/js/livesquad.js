@@ -164,7 +164,7 @@ window.addEventListener('statsReady', () => {
 
     // Match Info Session
     if (dt3.squad !== null) {
-        liveHTML += `<div class="score_2_inner border rounded_10 bg-white mt-3">
+        liveHTML += `<div class="score_2_inner border rounded_10 bg-white mt-3 overflow-hidden">
             <div class="bg-blue-grad font_18 d-block px-4 fw-bold text-white pt-2 pb-2 rounded_top cb-teams-hdr">
                              <span><span class="fi fi-${tid[dt3.squad[0].team_id][0].toLowerCase()} me-1"></span>${tid[dt3.squad[0].team_id][0]}</span>
                              <span class="float-end">${tid[dt3.squad[1].team_id][0]}<span class="fi fi-${tid[dt3.squad[1].team_id][0].toLowerCase()} ms-1"></span></span>
@@ -174,7 +174,7 @@ window.addEventListener('statsReady', () => {
                             Squad
                         </div>`;
             liveHTML += `<div class="d-flex w-100">
-                            <div class="d-flex w-50 border-right border-1 ms-2 flex-column">`;
+                            <div class="d-flex w-50 border-right border-1 flex-column">`;
             dt3.squad[0].bench_players.forEach(player => {
                 liveHTML += `<div class="d-flex border-bottom border-1">
                                         <div class="d-flex align-items-center ms-1">
@@ -189,7 +189,7 @@ window.addEventListener('statsReady', () => {
                                     </div>`;
             });
             liveHTML += `</div>`;
-            liveHTML += `<div class="d-flex w-50 border-left border-1 me-2 flex-column text-end">`;
+            liveHTML += `<div class="d-flex w-50 border-left border-1 flex-column text-end">`;
             dt3.squad[1].bench_players.forEach(player => {
                 liveHTML += `<div class="d-flex border-bottom border-1">
                                         <div class="d-block w-100 p-1">
@@ -210,7 +210,7 @@ window.addEventListener('statsReady', () => {
                             Playing XI
                         </div>`;
             liveHTML += `<div class="d-flex w-100">
-                            <div class="d-flex w-50 border-right border-1 ms-2 flex-column">`;
+                            <div class="d-flex w-50 border-right border-1 flex-column">`;
             dt3.squad[0].players.forEach(player => {
                 liveHTML += `<div class="d-flex border-bottom border-1" style="background-color: ${('delta' in player) ? (player.delta === 1 ? '#abf7b1' : '#fcc7c3') : '#ffffff'}">
                                         <div class="d-flex align-items-center ms-1">
@@ -225,7 +225,7 @@ window.addEventListener('statsReady', () => {
                                     </div>`;
             });
             liveHTML += `</div>`;
-            liveHTML += `<div class="d-flex w-50 border-left border-1 me-2 flex-column text-end">`;
+            liveHTML += `<div class="d-flex w-50 border-left border-1 flex-column text-end">`;
             dt3.squad[1].players.forEach(player => {
                 liveHTML += `<div class="d-flex border-bottom border-1" style="background-color: ${('delta' in player) ? (player.delta === 1 ? '#abf7b1' : '#fcc7c3') : '#ffffff'}">
                                         <div class="d-block w-100 p-1">
@@ -245,7 +245,7 @@ window.addEventListener('statsReady', () => {
                             Bench
                         </div>`;
             liveHTML += `<div class="d-flex w-100">
-                            <div class="d-flex w-50 border-right border-1 ms-2 flex-column">`;
+                            <div class="d-flex w-50 border-right border-1 flex-column">`;
             dt3.squad[0].bench_players.forEach(player => {
                 liveHTML += `<div class="d-flex border-bottom border-1" style="background-color: ${('delta' in player) ? (player.delta === 1 ? '#abf7b1' : '#fcc7c3') : '#ffffff'}">
                                         <div class="d-flex align-items-center ms-1">
@@ -260,7 +260,7 @@ window.addEventListener('statsReady', () => {
                                     </div>`;
             });
             liveHTML += `</div>`;
-            liveHTML += `<div class="d-flex w-50 border-left border-1 me-2 flex-column text-end">`;
+            liveHTML += `<div class="d-flex w-50 border-left border-1 flex-column text-end">`;
             dt3.squad[1].bench_players.forEach(player => {
                 liveHTML += `<div class="d-flex border-bottom border-1" style="background-color: ${('delta' in player) ? (player.delta === 1 ? '#abf7b1' : '#fcc7c3') : '#ffffff'}">
                                         <div class="d-block w-100 p-1">

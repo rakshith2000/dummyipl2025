@@ -277,7 +277,7 @@ window.addEventListener('statsReady', () => {
         liveHTML += `<tr class="border-bottom"><td class="pt-0 fw-bold" colspan="6">`;
         i.not_batted.forEach((nb, nbIdx) => {
             const name = nb.name;
-            liveHTML += `${name}${nbIdx < i.not_batted.length - 1 ? ', ' : ''}`;
+            liveHTML += `<span class="text-blue">${name}</span>${nbIdx < i.not_batted.length - 1 ? ', ' : ''}`;
         });
         liveHTML += `</td></tr>`;
 
